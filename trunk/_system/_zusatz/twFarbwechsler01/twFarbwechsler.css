@@ -1,0 +1,29 @@
+/* CSS für rkFarbwechsler 
+   (progtw.myftp.org/shirtbemaler/_system/_zusatz/rkFarbwechsler01/rkFarbwechsler.css
+*/
+
+#shirtFarbig {
+	background-color: #E6873D; /*orange*/
+	width: 260px; 
+	height: 336px;
+	border:1px solid red;
+}
+
+#shirtLeer {
+	width: 260px; 
+	height: 336px;
+	border:1px solid blue;
+}
+.farbe {
+	width: 26px;
+	height: 17px;
+	border: 1px solid blue;
+}
+#farbpalette {
+	width: 260px;
+	border: 1px solid red;
+}
+#imgShirtTransp {
+	text-align: center;
+	border:1px solid green;
+}

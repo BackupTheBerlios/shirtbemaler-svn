@@ -1,0 +1,124 @@
+/* Standard-CSS für Shirtbemaler 
+   (progtw.myftp.org/shirtbemaler/_system/_css/style.css */
+/*
+
+/* andere CSS-Dateien einbinden: 
+   (der Pfad geht von hier aus...) */
+@import url(tabMenue.css);
+/*@import url(../_zusatz/twSchatten01/twSchatten01.css);*/
+@import url(../_zusatz/rkSlider01/slide.css);
+
+
+
+paar websichere Farben:
+Rot:  #ff---- #ffcccc #ff9999
+Gelb: #ffff-- #ffffcc #ffff99
+Grün: #--ff-- #ccffcc #99ff99
+blau: #0000ff #0000cc #000099 #000066 (dunkler werdend)
+cornsilk: #fff8dc (ganz hellbraun)
+lavender: #fff0f5 (ganz hellblau)
+
+IE-Scheiß:
+* html #tabbedInhalt{}  (overflow:auto; kennt er wohl nich...)
+                        (ovwerflow-x und overflow-y kennt dafür nur der IE)
+                        
+
+*/
+
+
+
+/* Allgemein ---------------------------------------------------------------- */
+	* {
+  	padding: 0;
+  	margin: 0;    
+	}
+
+	html, body {
+    color: #000099;              /* dunkelblau für Schrift */
+	  background-color: #eeff00; 
+	  padding: 0px;
+	  margin: 0px;
+	  font-size: 100.01%;
+	  font-weight: bold;
+    text-align: center;
+    /*border-top: 2px solid #440000;
+    border-right: 2px solid #880000;
+    border-bottom: 2px solid #880000;
+    border-left: 2px solid #440000;*/
+  }
+	
+	img {
+		border: 0px;
+	}
+	
+	h1 {    
+  }
+	h2 {
+	}
+  h3 {
+  }
+  h4 {
+  }
+  h5 {    
+  }
+  h6 {    
+  }
+
+
+
+/* die (Haupt-) Tabelle -------------------------------------------- */
+#aTable {
+	width: 600px;
+	text-align: center;
+}
+
+
+
+/* die Boxen ---------------------------------------------- */
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9 {
+	border:2px solid #bbff00;
+}
+#a8 {	
+	vertical-align: top;
+	/*padding: 3 0 0 3;*/
+}
+
+.boxRot {
+	background-color: #ffcccc; /*#ffdddd;*/ /*#ffcccc;*/ /*#ff9999;*/
+}
+.boxGelb {
+	background-color: #ffffcc; /*#ffffdd;*/ /*#ffffcc;*/ /*#ffff99;*/
+}
+.boxGruen {
+	background-color: #ccffcc; /*#ddffdd;*/ /*#ccffcc;*/ /*#99ff99;*/
+}
+
+
+
+/* Boxen-Inhalt ---------------------------------------------- */
+.a1Table, .a3TableMotive, .a4TableGroesse, .a4TableDruckart, .a5Table {
+	text-align: center;
+	background-color: gray;
+	border: 1px solid black;
+	margin-bottom: 4px;
+}
+.a1Table, .a3TableMotiveTd, .a4TableGroesseTd, .a4TableDruckartTd, .a5TableTd {
+	border: 1px solid black;
+	text-align: center;
+}
+	
+
+
+
+
+
+
+/* Altes  ------------------------------------------------------------------- */
+#vorschauVorne {
+	background-color: white;
+	/*border:4px solid #ffffcc;*/
+	}
+#vorschauVorneDruckbild {
+	border: 1px dashed gray;
+}
+
