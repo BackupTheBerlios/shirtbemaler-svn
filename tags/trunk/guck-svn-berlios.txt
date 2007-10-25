@@ -1,0 +1,10 @@
+auf berlios.de im Repository 'shirtbemaler' den Zugriff für folgende User geregelt:
+
+User:
+root		d...
+nathandw	d...
+
+
+Zugriff:
+svn://svn.berlios.de/shirtbemaler/trunk
+svn+ssh://svn.berlios.de/shirtbemaler/trunk

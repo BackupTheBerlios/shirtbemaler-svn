@@ -1,0 +1,9 @@
+von http://www.cssplay.co.uk/menu/scroll_gallery
+
+Das Stylesheet wird in der 'shirtbemaler/_system/_css/style.css' eingebunden 
+(mit @import).
+
+Normalerweise is noch je Javascript-Datei dazu, die wird aber hier nich benötigt.
+
+Die (Hintergrund-)Bilder in ./images hat Ralle gemacht.
+(das funzt aber auch ohne Hintergrundbild)

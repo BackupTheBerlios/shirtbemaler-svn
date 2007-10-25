@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="script by http://um-fritz.de" />  
+
+    <title>Lies Mich</title>
+   <style type="text/css">
+    * {margin:0; padding:0;}
+    html, body {
+    height:100%;
+    width:100%;
+    background:rgb(255,255,255);
+    color:#000;
+    overflow:auto;
+    }
+    body {width:100%; font-size:100.1%; text-align:center; font-family:Verdana, sans-serif;}
+    #wrapper {position:relative; width:80%; margin:0 auto; text-align:left; font-size:75%; padding-bottom:2em;}
+    h1, h2 {background:#B76800; color:rgb(255,255,255); padding:0.5em; margin:0.5em 0;}
+    h1 {font-size:150%;}
+		h2 {font-size:110%;margin:1em 0 0.5em 0;}
+    p {padding:1em 0;}
+    a {text-decoration:none; font-weight:bold; color:#B76800;}
+		a:hover {text-decoration:underline;}
+		dl dl {padding-left:2em;}
+		dt {font-weight:bold; padding:0.2em 0 0 0;}
+		dd {padding:0.2em 0 0 2em; font-weight:normal;}
+    code {font-size:100%; font-family:"Courier new", sans-serife;}
+		.rechtsbuendig {text-align:right;}
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+  	<h1>Installationsanleitung: <em>um-Galerieskript_V1.00</em></h1>
+  	<p>Vom 18. 4. 2007 <a href="http://um-fritz.de" title="Homepage des Autors">@um-fritz.de</a></p>
+    
+    <p>Vielen Dank für Ihr Interesse an meinem Galerieskript. Damit die Installation
+  	reibungslos erfolgt, lesen Sie bitte zunächst diese Installationsanleitung.</p>
+  	<h2>Inhalt von <em>um-Galerieskript_V1.00.zip</em></h2>
+  	<dl>
+  		<dt>[um-galerie]</dt>
+  		<dd>config.php</dd>
+  		<dd>frame.php</dd>
+  		<dd>index.php</dd>
+  		<dd>skript.php</dd>
+  		<dd>lies_mich.html</dd>
+  		<dd>default.jpg</dd>
+  		<dd>
+        <dl>
+    		  <dt>[bilder]</dt>
+          <dd>alben.txt</dd>
+    			<dd>
+            <dl>
+                <dt>[album#]</dt>
+                <dd>bilderliste.txt</dd>
+                <dd>bilddateien</dd>
+            </dl>
+          </dd>
+        </dl>
+  	  </dd>
+  	</dl>
+
+    <h2>Installation</h2>
+    <p>Nach Entpacken des Zip-Archives sollte obige Verzeichnisstruktur vorhanden sein. Nachdem
+    diese (ohne die lies_mich.html) auf den Webspace mittels FTP hochgeladen wurde, müssen ggf. in der 
+    Datei config.php die Angaben im ersten Abschnitt bezüglich der Pfade angegeben werden. Zum Editieren 
+    aller Dateien eignet sich ein einfacher Texteditor. Textverarbeitungsprogramme sind dazu 
+    <strong>ungeeignet</strong>.<br />
+    Wichtig ist dem/n Verzeichnis(sen) im Verzeichnis [bilder], in die die Bilddateien gespeichert
+    werden sollen die entsprechenden Lese-, Schreib- und Ausführungsrechte zu geben (chmod 777).
+    Das ist wichtig, da das Skript einen Unterordner [thumbs] anlegen soll, in den dann die 
+    Thumbnails für diesen Ordner erstellt werden.<br />
+    Dafür sind entsprechende Zugriffsrechte notwendig. Sollte auf Ihrem Webspace Safe Mode aktiv
+    sein, wird es wohl notwendig sein, auch diesen Unterordnern manuell chmod 777 zuzuweisen.<br /> 
+    Danach sollte die Galerie eigentlich schon einsatzbereit sein.</p>
+
+    <h2>Anpassen des Designs</h2>
+    <p>Im zweiten Abschnitt der config.php werden Variablen Werte zugeordnet, die in der index.php,
+    bzw. der frame.php als CSS umgesetzt werden. Die Kommentare in der config.php erklären, welcher
+    Wert für welches Element Wirkung zeigt. Tiefergehende Änderungen können aber auch direkt in den
+    Dateien index.php und frame.php vorgenommen werden, sofern dies nötig erscheint.<br />
+    Die Grafik default.jpg wird geladen, wenn die Galerie ohne Parameter aufgerufen wird. Die Ausmasse
+    dieser Grafik sind abhängig von den Angaben in der config.php bezüglich der Dimensionen des
+    Iframes. Bei der Gestaltung können Sie Ihrer Fantasie freien Lauf lassen.</p>
+
+    <h2>Bilder hinzufügen</h2>
+    <p>Abhängig von den in der config.php angegebenen Masse für den Iframe können Sie Ihre Bilder
+    entsprechend mit einem Grafikprogramm skalieren. Wenn die Bilder grösser ausfallen, als der
+    Iframe, erscheinen Bildlaufleisten am Iframe. Sofern das nicht als störend empfunden wird,
+    muss darauf keine Rücksicht genommen werden.<br />
+    Die Bilder müssen dann entsprechend in das gewünschte Verzeichnis hochgeladen werden. In dem
+    Verzeichnis mit diesen Bildern muss dann eine Datei bilderliste.txt vorhanden sein, in der die
+    Bilder gelistet werden und wenn gewünscht auch Text angegeben werden kann. Dabei ist nach folgendem
+    Schema zu verfahren:<br />
+    bildname.[jpg|gif|png] ++ Text<br />
+    Beachten Sie bitte, dass hier zwischen Gross- und Kleinschreibung unterschieden werden muss!<br />
+    Die Reihenfolge in dieser Liste entscheidet dabei auch über die Reihenfolge der Thumbnails im
+    Anzeigebereich. Wenn Sie diese Schritte vollzogen haben, rufen Sie dieses Album im Browser auf.
+    Die Thumbnails werden nun automatisch erstellt, sofern die Vorraussetzungen bezüglich der 
+    Lese-, Schreib- und Ausführungsrechte stimmen und eine GD-Lib auf ihrem Websace installiert 
+    ist. Dieser Vorgang kann einige Zeit in Anspruch nehmen, je nachdem wieviele neue Thumbnails 
+    zu erstellen sind. Diese werden dann im Unterverzeichnis [thumbs] gespeichert, so daß 
+    beim nächsten Aufruf die Thumbnails direkt verfügbar sind.</p>
+
+    <h2>Bilderalben editieren oder hinzufügen</h2>
+    <p>Im Verzeichnis [bilder] können Unterverzeichnisse als Bilderalben angelegt werden. Die
+    Informationen über diese Verzeichnisse sind in der Datei alben.txt gespeichert. Auch hier
+    können sie die Information angeben, indem sie diese Datei editieren, nach folgendem Schema:<br />
+    verzeichnisname ++ Text<br />
+    Beachten Sie bitte, dass hier zwischen Gross- und Kleinschreibung unterschieden werden muss!<br />
+    Geben Sie diesem Verzeichnis entsprechende Zugriffsrechte (chmod 777) und legen sie eine neue
+    Datei bilderliste.txt an. Tragen Sie in diese Liste die Bilder in diesem Verzeichnis ein und
+    speichern Sie diese Bilder in dem Verzeichnis auf Ihren Webspace. Rufen Sie dieses Album dann einmal
+    im Browser auf, um die Thumbnails erstellen zu lassen.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Das Skript darf von jedem ohne Einschränkungen benutzt werden. Ich würde mich aber
+    freuen, wenn der kleine Backlink auf meine Homepage nicht entfernt würde. Auf jeden Fall
+    bitte ich darum folgenden Metatag in der XHTML Vorlage zu lassen, bzw. in eine neue Vorlage
+    im head Bereich zu übernehmen:<br /><br />
+    &lt;meta name="Generator" content="script by http://um-fritz.de" /&gt;<br /><br />
+    Auch das Löschen der Kommentarzeilen in den Skriptdateien ist nicht zulässig. Sollten Teile
+    des Codes für eine eigene Weiterentwicklung dienen, ist das in Ordnung.
+    Ungemein ungehalten wäre ich jedoch, dieses Skript mit fremden Copyrightvermerken wiederzuerkennen.</p>
+
+
+    <h2>Haftungsausschluss</h2>
+    <p>Ich habe dieses Skript nach bestem Wissen erstellt und getestet. Trotzdem kann ich keine Haftung übernehmen,
+    falls Schäden aus der Verwendung dieses Skriptes entstehen. Mit der Benutzung dieses Skripts erkennen
+    Sie diese Bedingung an. Die Benutzung erfolgt auf eigene Verantwortung.</p>
+    <h2>In eigener Sache</h2>
+    <p>Wenn Ihnen dieses Skript gefällt, würde ich mich über eine Nachricht freuen. Vielleicht werde ich
+    Seiten, die dieses Skript einsetzen als Beispiele verlinken. Wenn Sie daran Interesse haben, 
+    <a href="mailto:ulrich@um-fritz.de" title="email">lassen sie es mich wissen</a>.<br /></p>
+    <p class="rechtsbuendig">Viel Spaß mit der Galerie<br />Ulrich Fritz</p>
+    </div><!--ENDE WRAPPER-->
+  </body>
+</html>
