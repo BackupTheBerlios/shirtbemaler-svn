@@ -1,0 +1,27 @@
+/*>====O-------------------------------------------------O====>\
+|             ##### s h i r t b e m a l e r #####              |
+|      Copyright (c) by progtw (Thomas Weise), 2005-2007       |
+|                     http://www.progtw.de                     |
+|         Diese Datei ist ein Teil von 'shirtbemaler'.         |
+| Dieses Programm ist freie Software. Sie können es unter den  |
+| Bedingungen der GNU General Public License 3 (wie von der    |
+| Free Software Foundation herausgegeben) weitergeben und/oder |
+| modifizieren.                                                |
+| Eine Kopie der Lizenzbedingungen finden Sie in lizenz.txt.   |                                                 |
+\<====O-------------------------------------------------O====<*/
+
+
+Anpassungen bei einem SERVERUMZUG:
+
+
+Anpassungen in Zencart:
+includes/configure.php anpassen (vorher chmod)
+admin/includes/configure.php anpassen (vorher chmod)
+...DEINTEMPLATE/shirtbemaler/twAnbindungShirtbemaler.php   (<index.php?main_page=infopages&pages_id=28> nich vergessen anzupassen...) (+chmod)
+...DEINTEMPLATE/templates/tpl_infopages_default.php   (ca zeile93 den absoluten Pfad in $twLink)
+
+
+Anpassungen im Shirtbemaler:
+_system/_inc/_fkt/fkt_shirtbemaler.inc.php --> twInitSessionVariablen()
+
+~~~~~~~~~~~~~~~~~~
