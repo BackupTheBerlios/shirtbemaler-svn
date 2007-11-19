@@ -1,3 +1,0 @@
-ErrorDocument 404        /fehler404.php
-
-#RewriteEngine On RewriteRule index.php$ webseite/index.php [L,R=301]

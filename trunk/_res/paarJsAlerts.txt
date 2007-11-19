@@ -1,9 +1,0 @@
-alert("aaa:\n"+ 
-	      "location.hash------: " + window.location.hash+ "\n"+
-	      "location.host------: " + window.location.host+ "\n"+
-	      "location.hostname--: " + window.location.hostname+ "\n"+
-	      "location.href------: " + window.location.href+ "\n"+
-	      "location.pathname--: " + window.location.pathname+ "\n"+
-	      "location.port------: " + window.location.port+ "\n"+
-	      "location.protocol--: " + window.location.protocol+ "\n"+
-	      "location.search----: " + window.location.search);
