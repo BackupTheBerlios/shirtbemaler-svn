@@ -1,2 +1,0 @@
-bild1.jpg ++ Bild1 JPG
-grins.jpg ++ aa bb cc guck
