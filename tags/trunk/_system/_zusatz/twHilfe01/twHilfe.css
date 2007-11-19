@@ -1,0 +1,168 @@
+/* Stylesheet-Datei für 'hilfe.php' (von pimp-dein-shirt)
+mit fixedLayout
+ */
+
+/* das Fixed-Layout (body, oben, mitte, unten) START */
+/* (abgeguckt bei Stu Nicolls (www.cssplay.co.uk) ) */
+/* the bit that does the work */
+
+body {
+  margin:0;
+  border:0;
+  padding:0;
+  height:100%; 
+  max-height:100%; 
+  overflow: hidden; 
+  }
+/* for internet explorer */
+* html body {
+  padding:68px 0 50px 0;  /*  /*height(oben) + border(oben) */ 
+  }
+
+#oben {
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:64px; 
+  overflow:auto; 
+  border-bottom:4px solid #ffffcc;
+  }
+* html #oben {height:68px;  /*height + border*/ }
+
+#mitte {
+  /*font-family:"times new roman", serif;*/
+  /*font-size: 1.2em;*/
+  position:fixed; 
+  top:68px;    /*so hoch wie oben height+border*/
+  left:0;
+  bottom:50px; 
+  right:0; 
+  overflow:auto; 
+  }
+* html #mitte {
+  height:100%; 
+  width:100%; 
+  }
+
+#unten {
+  position:absolute; 
+  bottom:0; 
+  left:0;
+  width:100%; 
+  height:64px; 
+  overflow:auto; 
+  text-align:right; 
+  border-top:5px solid #ffffcc;
+  }
+* html #unten {height:69px;  /*height + border*/ }
+
+/* end of bit that does the work */
+/* das Fixed-Layout (body, oben, mitte, unten) END */
+/* -------------------------------------------------------------------------- */
+
+
+/* das 'eigentliche' Style ACHTUNG: nicht schon oben festgelegte Eigenschaften von
+ body, oben, mitte, unten überschreiben! */
+ 
+#body {
+	
+}
+ 
+#oben {
+	font-family: 'Comic Sans MS', Verdana, sans-serif;
+	background-image: url(img/1pxVertikal64.png);
+	background-repeat: x-repeat;
+	font-size: 1.6em;	
+	text-align: center;
+	color: #000099;
+}
+
+#mitte {
+	font-family: 'Comic Sans MS', Verdana, sans-serif;
+	background-color: #ffffcc;
+  padding: 0px 8px 0px 8px;
+  margin: 0px;
+}
+
+#unten {
+	background-image: url(img/1pxVertikal64_2.png);
+	background-repeat: x-repeat;	
+	text-align: right;
+}
+
+/* ------------ */
+
+
+.boxKategorie {
+	border-right: 2px solid #bbff00;
+	border-left:  2px solid #bbff00;
+}
+
+.boxTrenner {
+	height: 36px;
+	background-image: url(img/1pxVertikal36.png);
+	background-repeat: x-repeat;		
+	border-right: 2px solid #bbff00;
+	border-left:  2px solid #bbff00;
+}
+
+.kategorieUeberschrift {
+	/*border: 1px solid #bbff00;*/
+	color: green;
+	padding: 0px 0px 0px 6px;
+}
+
+
+
+
+
+.frage {
+	/*text-align: center;*/
+	/*font-weight:bold;*/
+	text-decoration:none;	
+	padding: 0px 0px 0px 12px;
+}
+.frage a:link {  color:#000099; text-decoration:none; }
+.frage a:visited { color:#000055; text-decoration:none; }
+.frage a:focus { color:#0000ff; text-decoration:underline; }
+.frage a:hover { color:#0000ff; text-decoration:none; }
+.frage a:active { color:#0000ff; text-decoration:underline; }
+
+.antwort {
+	font-size: 0.8em;
+	/*border: 1px solid #bbff00;*/
+	background-color: #ffff99;
+	color: #000099;
+	padding: 4px 8px 4px 8px;
+}
+
+.frageAntwortBox {
+	
+}
+
+
+.tooltipLink {
+	text-decoration: none;
+	border: 1px dotted #000099;
+	background-color: #ffffbb;
+	cursor: text; 
+}
+
+
+
+.spanPimpdeinshirt {
+	font-weight: bold;
+}
+.spanBtnAnmelden {	
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	border: 2px solid #ff8800;
+	background-color: maroon;
+	color: #ffffcc;
+	padding: 0 4px 0 4px;
+}
+.btnClose {
+	margin: 0px 24px 0px 0px;
+}
+
